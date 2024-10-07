@@ -5,15 +5,16 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="816.0" style="-fx-background-color: ff9d00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <top>
-        <MenuBar BorderPane.alignment="CENTER">
+        <MenuBar style="-fx-background-color: #ff7b00;" BorderPane.alignment="CENTER">
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
@@ -28,35 +29,38 @@
                 <Menu mnemonicParsing="false" text="Theme" />
                 <Menu mnemonicParsing="false" text="Help" />
             </menus>
+         <effect>
+            <ColorAdjust brightness="0.09" />
+         </effect>
 
         </MenuBar>
     </top>
     <right>
-        <VBox prefHeight="622.0" prefWidth="213.0" BorderPane.alignment="CENTER">
+        <VBox prefHeight="622.0" prefWidth="213.0" style="-fx-background-color: #66ff00;" BorderPane.alignment="CENTER">
             <children>
                 <TextField promptText="First Name" />
                 <TextField layoutX="10.0" layoutY="10.0" promptText="Last Name" />
                 <TextField layoutX="10.0" layoutY="36.0" promptText="Department" />
                 <TextField layoutX="10.0" layoutY="62.0" promptText="Major" />
                 <TextField layoutX="10.0" layoutY="88.0" promptText="Email" />
-                <TextField layoutX="10.0" layoutY="114.0" promptText="ImageURl" />
-                <VBox prefHeight="133.0" prefWidth="213.0" />
+                <TextField layoutX="10.0" layoutY="114.0" promptText="imageURL" />
+                <VBox prefHeight="133.0" prefWidth="213.0" style="-fx-background-color: #66ff00;" />
                 <VBox prefHeight="268.0" prefWidth="213.0">
                     <children>
                         <VBox prefHeight="122.0" prefWidth="213.0">
                             <children>
-                                <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="213.0" text="Clear" />
+                                <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="213.0" style="-fx-background-color: ff9d00;" text="Clear" />
                                 <VBox prefHeight="22.0" prefWidth="213.0" />
-                                <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="213.0" text="Add" />
+                                <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="213.0" style="-fx-background-color: ff9d00;" text="Add" />
                             </children>
                         </VBox>
                         <VBox prefHeight="153.0" prefWidth="213.0">
                             <children>
-                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="213.0" text="Edit" />
+                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="213.0" style="-fx-background-color: ff9d00;" text="Edit" />
                                 <VBox prefHeight="49.0" prefWidth="213.0" />
                                 <VBox prefHeight="65.0" prefWidth="213.0">
                                     <children>
-                                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="213.0" text="Delete" />
+                                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="213.0" style="-fx-background-color: ff9d00;" text="Delete" />
                                     </children>
                                 </VBox>
                             </children>
@@ -67,9 +71,9 @@
         </VBox>
     </right>
     <center>
-        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
             <children>
-                <MenuBar prefHeight="21.0" prefWidth="412.0">
+                <MenuBar prefHeight="21.0" prefWidth="435.0" style="-fx-background-color: #ff7b00;">
                     <menus>
                         <Menu mnemonicParsing="false" text="Id">
                             <items>
@@ -107,10 +111,13 @@
         </HBox>
     </center>
    <left>
-      <ImageView fitHeight="235.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fitHeight="301.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../../../../../image/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
          </image>
       </ImageView>
    </left>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #969696;" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>
