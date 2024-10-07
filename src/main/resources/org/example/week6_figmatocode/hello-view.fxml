@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Theme" />
+                <Menu mnemonicParsing="false" text="Help" />
+            </menus>
+
+        </MenuBar>
+    </top>
+    <right>
+        <VBox prefHeight="622.0" prefWidth="213.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField promptText="First Name" />
+                <TextField layoutX="10.0" layoutY="10.0" promptText="Last Name" />
+                <TextField layoutX="10.0" layoutY="36.0" promptText="Department" />
+                <TextField layoutX="10.0" layoutY="62.0" promptText="Major" />
+                <TextField layoutX="10.0" layoutY="88.0" promptText="Email" />
+                <TextField layoutX="10.0" layoutY="114.0" promptText="ImageURl" />
+                <VBox prefHeight="133.0" prefWidth="213.0" />
+                <VBox prefHeight="268.0" prefWidth="213.0">
+                    <children>
+                        <VBox prefHeight="122.0" prefWidth="213.0">
+                            <children>
+                                <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="213.0" text="Clear" />
+                                <VBox prefHeight="22.0" prefWidth="213.0" />
+                                <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="213.0" text="Add" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="153.0" prefWidth="213.0">
+                            <children>
+                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="213.0" text="Edit" />
+                                <VBox prefHeight="49.0" prefWidth="213.0" />
+                                <VBox prefHeight="65.0" prefWidth="213.0">
+                                    <children>
+                                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="213.0" text="Delete" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </right>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar prefHeight="21.0" prefWidth="412.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Id">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="First name">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Last name">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Department">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Major">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Email">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </HBox>
+    </center>
+   <left>
+      <ImageView fitHeight="235.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../../image/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>
